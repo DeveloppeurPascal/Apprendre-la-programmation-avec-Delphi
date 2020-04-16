@@ -1,0 +1,18 @@
+inherited frmFMX_iPhone: TfrmFMX_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 2
+  inherited Edit1: TEdit
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    inherited PasswordEditButton1: TPasswordEditButton
+      Size.Height = 26.000000000000000000
+    end
+  end
+  inherited Timer1: TTimer [1]
+  end
+  inherited Layout1: TLayout [2]
+  end
+  inherited Panel1: TPanel [3]
+  end
+end

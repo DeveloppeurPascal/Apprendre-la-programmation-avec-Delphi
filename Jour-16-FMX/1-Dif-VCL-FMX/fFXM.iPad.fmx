@@ -1,0 +1,16 @@
+inherited frmFMX_iPad: TfrmFMX_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 2
+  inherited Edit1: TEdit
+    inherited PasswordEditButton1: TPasswordEditButton
+      Size.Height = 26.000000000000000000
+    end
+  end
+  inherited Timer1: TTimer [1]
+  end
+  inherited Layout1: TLayout [2]
+  end
+  inherited Panel1: TPanel [3]
+  end
+end
