@@ -1,0 +1,100 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnMouseMove = FormMouseMove
+  DesignerMasterStyle = 0
+  object CalloutRectangle1: TCalloutRectangle
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 30.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.X = 104.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    object Text1: TText
+      Align = Top
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 84.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Align = Top
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label1'
+      TabOrder = 2
+    end
+  end
+  object Circle1: TCircle
+    Position.X = 360.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RadiantPentagon1: TRadiantPentagon
+    Position.X = 392.000000000000000000
+    Position.Y = 224.000000000000000000
+  end
+  object RadiantArrow1: TRadiantArrow
+    Position.X = 136.000000000000000000
+    Position.Y = 296.000000000000000000
+    RotationAngle = 90.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object MagnifierGlass1: TMagnifierGlass
+    LoupeScale = 1.500000000000000000
+    Position.X = 232.000000000000000000
+    Position.Y = 168.000000000000000000
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Max = 10.000000000000000000
+    Orientation = Horizontal
+    Position.X = 272.000000000000000000
+    Position.Y = 376.000000000000000000
+    TabOrder = 5
+    Value = 1.000000000000000000
+    OnChange = TrackBar1Change
+  end
+end

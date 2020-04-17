@@ -1,0 +1,119 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 273
+  ClientWidth = 492
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Label1'
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 136.000000000000000000
+    Position.Y = 8.000000000000000000
+  end
+  object ListBox1: TListBox
+    Touch.GestureManager = GestureManager1
+    Touch.InteractiveGestures = [Zoom]
+    OnGesture = ListBox1Gesture
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 2
+    AlternatingRowBackground = True
+    DisableFocusEffect = True
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    MultiSelectStyle = Default
+    OnItemClick = ListBox1ItemClick
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 196.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'ListBoxGroupHeader1'
+    end
+    object ListBoxItem1: TListBoxItem
+      Position.Y = 56.000000000000000000
+      TabOrder = 1
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 75.000000000000000000
+      TabOrder = 2
+      Text = 'ListBoxItem2'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 94.000000000000000000
+      TabOrder = 3
+      Text = 'ListBoxItem3'
+    end
+    object ListBoxGroupFooter1: TListBoxGroupFooter
+      Position.Y = 113.000000000000000000
+      Size.Width = 196.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'ListBoxGroupFooter1'
+    end
+  end
+  object Button1: TButton
+    Default = True
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 3
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object ListBox2: TListBox
+    Position.X = 280.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 5
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object Button2: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 44.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowrighttoolbutton'
+    TabOrder = 6
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 44.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowrighttoolbutton'
+    TabOrder = 7
+    Text = 'Button2'
+    OnClick = Button3Click
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 240
+    Top = 40
+  end
+end
