@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 88.000000000000000000
+    Text = 'Label1'
+    TabOrder = 0
+    object FloatAnimation1: TFloatAnimation
+      AutoReverse = True
+      Enabled = True
+      Duration = 1.000000000000000000
+      Interpolation = Sinusoidal
+      Loop = True
+      OnProcess = FloatAnimation1Process
+      PropertyName = 'Position.X'
+      StartValue = 0.000000000000000000
+      StopValue = 50.000000000000000000
+    end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 168.000000000000000000
+    Position.Y = 160.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 176.000000000000000000
+    Position.Y = 272.000000000000000000
+    TabOrder = 2
+    Text = 'Button1'
+    object FloatAnimation2: TFloatAnimation
+      Duration = 1.000000000000000000
+      OnProcess = FloatAnimation2Process
+      PropertyName = 'Scale.X'
+      StartValue = 1.000000000000000000
+      StartFromCurrent = True
+      StopValue = 2.000000000000000000
+      Trigger = 'IsFocused=true'
+      TriggerInverse = 'IsFocused=false'
+    end
+  end
+  object Rectangle1: TRectangle
+    Fill.Bitmap.WrapMode = Tile
+    Fill.Kind = Bitmap
+    Position.X = 296.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object BitmapListAnimation1: TBitmapListAnimation
+      AnimationCount = 1
+      Duration = 0.200000002980232200
+      PropertyName = 'Fill.Bitmap.Bitmap'
+    end
+  end
+end
