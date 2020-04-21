@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{678CF545-BC24-4780-83DF-AF76358417AA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DelphiBootCampJeuDuPendu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DelphiBootCampJeuDuPenduAdmin.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DelphiBootCampJeuDuPendu">
+        <MSBuild Projects="DelphiBootCampJeuDuPendu.dproj"/>
+    </Target>
+    <Target Name="DelphiBootCampJeuDuPendu:Clean">
+        <MSBuild Projects="DelphiBootCampJeuDuPendu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DelphiBootCampJeuDuPendu:Make">
+        <MSBuild Projects="DelphiBootCampJeuDuPendu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DelphiBootCampJeuDuPenduAdmin">
+        <MSBuild Projects="DelphiBootCampJeuDuPenduAdmin.dproj"/>
+    </Target>
+    <Target Name="DelphiBootCampJeuDuPenduAdmin:Clean">
+        <MSBuild Projects="DelphiBootCampJeuDuPenduAdmin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DelphiBootCampJeuDuPenduAdmin:Make">
+        <MSBuild Projects="DelphiBootCampJeuDuPenduAdmin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DelphiBootCampJeuDuPendu;DelphiBootCampJeuDuPenduAdmin"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DelphiBootCampJeuDuPendu:Clean;DelphiBootCampJeuDuPenduAdmin:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DelphiBootCampJeuDuPendu:Make;DelphiBootCampJeuDuPenduAdmin:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

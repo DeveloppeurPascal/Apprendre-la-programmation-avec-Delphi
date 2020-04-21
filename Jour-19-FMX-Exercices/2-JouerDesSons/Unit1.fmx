@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 400.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 2
+    OnSwitch = Switch1Switch
+  end
+  object Switch2: TSwitch
+    IsChecked = False
+    Position.X = 80.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 3
+    OnSwitch = Switch2Switch
+  end
+  object MediaPlayer1: TMediaPlayer
+    FileName = 
+      'C:\Users\Patrick\Documents\Embarcadero\Studio\Projets\BootcampDe' +
+      'lphi\Jour-19-FMX-Exercices\3-JeuDuPendu\Creepy-Rhythm-2.mp3'
+    Left = 408
+    Top = 120
+  end
+  object MediaPlayer2: TMediaPlayer
+    FileName = 
+      'C:\Users\Patrick\Documents\Embarcadero\Studio\Projets\BootcampDe' +
+      'lphi\Jour-19-FMX-Exercices\3-JeuDuPendu\Transwarp -30.mp3'
+    Left = 112
+    Top = 88
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 296
+    Top = 304
+  end
+  object MediaPlayer3: TMediaPlayer
+    Left = 432
+    Top = 360
+  end
+end
