@@ -1,0 +1,16 @@
+﻿[BindNavigator1]
+Coordinates=270,20,90,51
+
+[PrototypeBindSource1]
+Coordinates=10,10,125,123
+
+[StringGrid1]
+Coordinates=250,140,70,51
+Visible=True
+
+[]
+Coordinates=125,124,82,33
+
+[BindingsList1]
+Coordinates=154,80,82,33
+

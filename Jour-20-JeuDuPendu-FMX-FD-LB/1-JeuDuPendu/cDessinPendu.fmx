@@ -1,0 +1,99 @@
+object DessinPendu: TDessinPendu
+  Size.Width = 424.000000000000000000
+  Size.Height = 521.000000000000000000
+  Size.PlatformDefault = False
+  object elem01: TRectangle
+    Tag = 1
+    Position.X = 8.000000000000000000
+    Position.Y = 488.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem02: TRectangle
+    Tag = 2
+    Position.X = 280.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 458.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem03: TRectangle
+    Tag = 3
+    Position.X = 112.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem04: TLine
+    Tag = 4
+    LineType = Diagonal
+    Position.X = 120.000000000000000000
+    Position.Y = 40.000000000000000000
+    RotationAngle = 45.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem06: TRectangle
+    Tag = 6
+    Position.X = 136.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem10: TRectangle
+    Tag = 10
+    Position.X = 160.000000000000000000
+    Position.Y = 200.000000000000000000
+    RotationAngle = 45.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem11: TRectangle
+    Tag = 11
+    Position.X = 128.000000000000000000
+    Position.Y = 344.000000000000000000
+    RotationAngle = 250.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem09: TRectangle
+    Tag = 9
+    Position.X = 56.000000000000000000
+    Position.Y = 344.000000000000000000
+    RotationAngle = 80.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem08: TRectangle
+    Tag = 8
+    Position.X = 16.000000000000000000
+    Position.Y = 208.000000000000000000
+    RotationAngle = 125.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem07: TRectangle
+    Tag = 7
+    Position.X = 104.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object elem05: TCircle
+    Tag = 5
+    Position.X = 120.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
