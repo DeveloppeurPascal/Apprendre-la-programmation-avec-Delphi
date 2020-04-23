@@ -1,0 +1,169 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 461
+  ClientWidth = 498
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 498.000000000000000000
+    Size.Height = 461.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      498s
+      461s
+      498s
+      461s
+      498s
+      461s)
+    object ecran1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ecran1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Button1: TButton
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 27.000000000000000000
+        Size.Width = 478.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Button1'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 69.000000000000000000
+        Size.Width = 478.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Button2'
+        OnClick = Button2Click
+      end
+      object Label3: TLabel
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'ecran1'
+        TabOrder = 2
+      end
+    end
+    object ecran2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ecran2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Button3: TButton
+        Anchors = [akRight, akBottom]
+        Position.X = 410.000000000000000000
+        Position.Y = 429.000000000000000000
+        TabOrder = 0
+        Text = 'Button3'
+        OnClick = Button3Click
+      end
+      object Label2: TLabel
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'ecran2'
+        TabOrder = 2
+      end
+    end
+    object ecran3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ecran3'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Button4: TButton
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 478.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Button4'
+        OnClick = Button4Click
+      end
+      object Button5: TButton
+        Anchors = [akRight, akBottom]
+        Position.X = 406.000000000000000000
+        Position.Y = 432.000000000000000000
+        TabOrder = 1
+        Text = 'Button5'
+        OnClick = Button5Click
+      end
+      object Label1: TLabel
+        Align = Top
+        Position.Y = 42.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'ecran3'
+        TabOrder = 2
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 232
+    Top = 216
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Onglet'
+    end
+  end
+end

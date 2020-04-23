@@ -1,0 +1,108 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 398
+  ClientWidth = 383
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ecran1: TLayout
+    Align = Contents
+    Size.Width = 383.000000000000000000
+    Size.Height = 398.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object Button1: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 363.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 52.000000000000000000
+      Size.Width = 363.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Button2'
+      OnClick = Button2Click
+    end
+  end
+  object ecran2: TLayout
+    Align = Contents
+    Size.Width = 342.000000000000000000
+    Size.Height = 280.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    object Button3: TButton
+      Anchors = [akRight, akBottom]
+      Position.X = 256.000000000000000000
+      Position.Y = 248.000000000000000000
+      TabOrder = 0
+      Text = 'Button3'
+      OnClick = Button3Click
+    end
+  end
+  object ecran3: TLayout
+    Align = Contents
+    Size.Width = 383.000000000000000000
+    Size.Height = 398.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button4: TButton
+      Anchors = [akRight, akBottom]
+      Default = True
+      ModalResult = 6
+      Position.X = 206.000000000000000000
+      Position.Y = 368.000000000000000000
+      TabOrder = 0
+      Text = 'Button4'
+      OnClick = Button4Click
+    end
+    object Button5: TButton
+      Anchors = [akRight, akBottom]
+      Cancel = True
+      ModalResult = 7
+      Position.X = 292.000000000000000000
+      Position.Y = 368.000000000000000000
+      TabOrder = 1
+      Text = 'Button5'
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 363.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Button6'
+      OnClick = Button1Click
+    end
+  end
+end

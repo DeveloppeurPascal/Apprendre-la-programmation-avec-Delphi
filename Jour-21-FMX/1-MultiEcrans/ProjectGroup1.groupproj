@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C8A0DF82-D20B-40DA-A191-EE543142F2A2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="progFiches.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="progLayout.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="progCadres.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="progOnglets.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="progFiches">
+        <MSBuild Projects="progFiches.dproj"/>
+    </Target>
+    <Target Name="progFiches:Clean">
+        <MSBuild Projects="progFiches.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="progFiches:Make">
+        <MSBuild Projects="progFiches.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="progLayout">
+        <MSBuild Projects="progLayout.dproj"/>
+    </Target>
+    <Target Name="progLayout:Clean">
+        <MSBuild Projects="progLayout.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="progLayout:Make">
+        <MSBuild Projects="progLayout.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="progCadres">
+        <MSBuild Projects="progCadres.dproj"/>
+    </Target>
+    <Target Name="progCadres:Clean">
+        <MSBuild Projects="progCadres.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="progCadres:Make">
+        <MSBuild Projects="progCadres.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="progOnglets">
+        <MSBuild Projects="progOnglets.dproj"/>
+    </Target>
+    <Target Name="progOnglets:Clean">
+        <MSBuild Projects="progOnglets.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="progOnglets:Make">
+        <MSBuild Projects="progOnglets.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="progFiches;progLayout;progCadres;progOnglets"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="progFiches:Clean;progLayout:Clean;progCadres:Clean;progOnglets:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="progFiches:Make;progLayout:Make;progCadres:Make;progOnglets:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
