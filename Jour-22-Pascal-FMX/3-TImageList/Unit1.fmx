@@ -1,0 +1,110 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Images = DataModule2.ImageList1
+    ImageIndex = 0
+    Position.X = 320.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 0
+    Text = 'Button1'
+  end
+  object Button2: TButton
+    Images = DataModule2.ImageList1
+    ImageIndex = 1
+    Position.X = 64.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 192.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Button2'
+  end
+  object SpeedButton1: TSpeedButton
+    Images = DataModule2.ImageList1
+    ImageIndex = 1
+    Position.X = 400.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'SpeedButton1'
+  end
+  object MainMenu1: TMainMenu
+    Images = DataModule2.ImageList1
+    Left = 152
+    Top = 144
+    object MenuItem1: TMenuItem
+      Text = 'MenuItem1'
+      ImageIndex = 0
+      object MenuItem15: TMenuItem
+        Locked = True
+        Text = 'MenuItem15'
+      end
+      object MenuItem16: TMenuItem
+        Locked = True
+        Text = 'MenuItem16'
+      end
+      object MenuItem17: TMenuItem
+        Locked = True
+        Text = 'MenuItem17'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = 'MenuItem2'
+      object MenuItem5: TMenuItem
+        Locked = True
+        Text = 'MenuItem5'
+        ImageIndex = 1
+        object MenuItem9: TMenuItem
+          Locked = True
+          Text = 'MenuItem9'
+        end
+        object MenuItem10: TMenuItem
+          Locked = True
+          Text = 'MenuItem10'
+          ImageIndex = 0
+        end
+        object MenuItem11: TMenuItem
+          Locked = True
+          Text = 'MenuItem11'
+          ImageIndex = 1
+        end
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Text = 'MenuItem6'
+      end
+    end
+    object MenuItem3: TMenuItem
+      Text = 'MenuItem3'
+      object MenuItem7: TMenuItem
+        Locked = True
+        Text = 'MenuItem7'
+      end
+      object MenuItem8: TMenuItem
+        Locked = True
+        Text = 'MenuItem8'
+      end
+    end
+    object MenuItem4: TMenuItem
+      Text = 'MenuItem4'
+    end
+    object MenuItem12: TMenuItem
+      Text = 'MenuItem12'
+    end
+    object MenuItem13: TMenuItem
+      Text = 'MenuItem13'
+    end
+    object MenuItem14: TMenuItem
+      Text = 'MenuItem14'
+    end
+  end
+end
