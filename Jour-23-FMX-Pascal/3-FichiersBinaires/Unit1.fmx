@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnFileIntegerWrite: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'btnFileIntegerWrite'
+    OnClick = btnFileIntegerWriteClick
+  end
+  object ListBox1: TListBox
+    Align = Left
+    Size.Width = 200.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
+  object btnFileintegerRead: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'btnFileintegerRead'
+    OnClick = btnFileintegerReadClick
+  end
+  object btnFileCardinalRead: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'btnFileCardinalRead'
+    OnClick = btnFileCardinalReadClick
+  end
+  object btnFileByteRead: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'btnFileByteRead'
+    OnClick = btnFileByteReadClick
+  end
+  object btnFileStream: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'btnFileStream'
+    OnClick = btnFileStreamClick
+  end
+end
