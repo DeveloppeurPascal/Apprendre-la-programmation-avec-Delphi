@@ -1,0 +1,256 @@
+object frmPrincipale: TfrmPrincipale
+  Left = 0
+  Top = 0
+  Caption = 'Liste de courses FMX'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 3
+    TabPosition = None
+    Sizes = (
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s)
+    object tiListe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiListe'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 440.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearanceObjects.ItemObjects.Image.Visible = False
+        CanSwipeDelete = False
+        OnItemClick = ListView1ItemClick
+      end
+      object ToolBar1: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnNouveau: TButton
+          Action = GoAjout
+          Anchors = [akTop, akRight]
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 552.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+        end
+      end
+    end
+    object tiModification: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiModification'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar3: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnRetourModif: TButton
+          Action = GoListe
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 0
+        end
+        object btnEnregistrerModif: TButton
+          Anchors = [akTop, akRight]
+          Position.X = 552.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+          Text = 'Enregistrer'
+          OnClick = btnEnregistrerModifClick
+        end
+        object btnAchatEffectue: TButton
+          Position.X = 464.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 2
+          Text = 'Achet'#233
+          OnClick = btnAchatEffectueClick
+        end
+      end
+      object Label2: TLabel
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 620.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Article '#224' acheter'
+        TabOrder = 1
+      end
+      object edtArticleModif: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Position.X = 10.000000000000000000
+        Position.Y = 87.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 620.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object tiAjout: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiAjout'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnBackAjout: TButton
+          Action = GoListe
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 0
+        end
+        object btnEnregistrerAjout: TButton
+          Anchors = [akTop, akRight]
+          Position.X = 544.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+          Text = 'Enregistrer'
+          OnClick = btnEnregistrerAjoutClick
+        end
+      end
+      object edtArticleAjout: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Position.X = 10.000000000000000000
+        Position.Y = 87.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 620.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label1: TLabel
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 620.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Article '#224' acheter'
+        TabOrder = 2
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dm.tabMesCourses
+    ScopeMappings = <>
+    Left = 104
+    Top = 336
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 324
+    Top = 245
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'libelle'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'dateachat'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'libelle'
+      Control = edtArticleModif
+      Track = False
+    end
+  end
+  object ActionList1: TActionList
+    Left = 64
+    Top = 224
+    object GoAjout: TChangeTabAction
+      Category = 'Onglet'
+      CustomText = 'Nouveau'
+      Tab = tiAjout
+    end
+    object GoModification: TChangeTabAction
+      Category = 'Onglet'
+      Tab = tiModification
+    end
+    object GoListe: TChangeTabAction
+      Category = 'Onglet'
+      CustomText = 'Retour'
+      Tab = tiListe
+    end
+  end
+end
