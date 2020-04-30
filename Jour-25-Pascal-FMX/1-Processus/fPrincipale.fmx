@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 618
+  ClientWidth = 957
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnThreadAnonyme: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'btnThreadAnonyme'
+    OnClick = btnThreadAnonymeClick
+  end
+  object btnTask: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'btnTask'
+    OnClick = btnTaskClick
+  end
+  object btnParallelFor: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'btnParallelFor'
+    OnClick = btnParallelForClick
+  end
+  object btnFor: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 3
+    Text = 'btnFor'
+    OnClick = btnForClick
+  end
+  object ListBox1: TListBox
+    Position.X = 16.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 5
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object ListBox2: TListBox
+    Position.X = 240.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 6
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+end
