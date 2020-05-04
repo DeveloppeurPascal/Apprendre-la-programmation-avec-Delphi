@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    RowCount = 164
+    Viewport.Width = 620.000000000000000000
+    Viewport.Height = 439.000000000000000000
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'URI=https://www.developpeur-pascal.fr/feed/'
+      'DriverID=CDataRSS')
+    Connected = True
+    LoginPrompt = False
+    Left = 480
+    Top = 232
+  end
+  object FDPhysCDataRSSDriverLink1: TFDPhysCDataRSSDriverLink
+    DriverID = 'CDataRSS'
+    Left = 392
+    Top = 160
+  end
+  object FDTable1: TFDTable
+    Active = True
+    IndexFieldNames = 'Guid'
+    Connection = FDConnection1
+    UpdateOptions.UpdateTableName = 'CData.RSS.Les_trucs_et_astuces_d_un_d_veloppeur_Pascal'
+    TableName = 'CData.RSS.Les_trucs_et_astuces_d_un_d_veloppeur_Pascal'
+    Left = 424
+    Top = 328
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTable1
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+end

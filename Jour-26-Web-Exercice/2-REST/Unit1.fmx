@@ -1,0 +1,106 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 996
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 996.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    RowCount = 1
+    Viewport.Width = 992.000000000000000000
+    Viewport.Height = 455.000000000000000000
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://api-adresse.data.gouv.fr'
+    Params = <>
+    RaiseExceptionOn500 = False
+    Left = 320
+    Top = 80
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <
+      item
+        Name = 'q'
+        Value = '14 rue charles V paris'
+      end>
+    Resource = 'search'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 440
+    Top = 152
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    RootElement = 'features'
+    Left = 632
+    Top = 176
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 584
+    Top = 304
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'type'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'geometry'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'properties'
+        DataType = ftWideString
+        Size = 255
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 104
+    Top = 264
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 228
+    Top = 317
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+end
