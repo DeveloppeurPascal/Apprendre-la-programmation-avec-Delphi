@@ -10,4 +10,6 @@ Vous pouvez aussi utiliser la version d'évaluation ou une version payante des l
 
 Les rediffusions des 27 sessions de direct sont disponibles sur la chaîne YouTube de Barnsten France à l'adresse https://vasur.fr/delphibootcamp
 
+Cette formation et d'autres seront aussi disponibles depuis le site https://apprendre-delphi.fr
+
 Pour intervenir sur les réseaux sociaux, merci d'utiliser les hashtags #DelphiBootCamp ou #Delphi si vous voulez partager votre opinion avec d'autres développeurs Delphi ou personnes ayant suivi cette formation en ligne.
