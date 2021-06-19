@@ -8,11 +8,7 @@ La formation était destinée à tous, même non informaticiens. Les bases de la
 La formation a été faite avec la version 10.3.3 Rio de Delphi. Vous pouvez la suivre avec la version Community Edition. Elle est téléchargeable gratuitement pour un usage personnel sur le site d'Embarcadero : https://www.embarcadero.com/fr/products/delphi/starter
 Vous pouvez aussi utiliser la version d'évaluation ou une version payante des licences sur la dernière version en cours.
 
-Les rediffusions des 27 sessions de direct sont disponibles sur la chaîne YouTube de Barnsten France à l'adresse https://vasur.fr/delphibootcamp
-
-Cette formation et d'autres seront aussi disponibles depuis le site https://apprendre-delphi.fr
-
-Pour intervenir sur les réseaux sociaux, merci d'utiliser les hashtags #DelphiBootCamp ou #Delphi si vous voulez partager votre opinion avec d'autres développeurs Delphi ou personnes ayant suivi cette formation en ligne.
+Les rediffusions des 27 sessions de direct sont disponibles sur la chaîne YouTube de Barnsten France et sur https://apprendre-delphi.fr/apprendre-la-programmation-avec-delphi-2020.php
 
 -----
 
