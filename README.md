@@ -5,10 +5,10 @@ Les sessions en direct ont eu lieu entre le 23 mars 2020 et le 5 mai 2020 durant
 
 La formation était destinée à tous, même non informaticiens. Les bases de la programmation ont été abordées en utilisant le langage Pascal et Delphi comme supports. Les frameworks VCL et FireMonkey (FMX) de Delphi ont été traités pour finir avec le déploiement des logiciels et leur diffusion. Le développement de logiciels pour Windows, macOS et Linux, comme d'applications mobiles pour iOS et Android a été traité.
 
-La formation a été faite avec la version 10.3.3 Rio de Delphi. Vous pouvez la suivre avec la version Community Edition. Elle est téléchargeable gratuitement pour un usage personnel sur le site d'Embarcadero : https://www.embarcadero.com/fr/products/delphi/starter
+La formation a été faite avec la version 10.3.3 Rio de Delphi. Vous pouvez la suivre avec la version Community Edition. Elle est [téléchargeable gratuitement pour un usage personnel](https://www.embarcadero.com/fr/products/delphi/starter).
 Vous pouvez aussi utiliser la version d'évaluation ou une version payante des licences sur la dernière version en cours.
 
-Les rediffusions des 27 sessions de direct sont disponibles sur [la chaîne YouTube de Barnsten France](https://www.youtube.com/c/BarnstenFrance) et sur [Apprendre Delphi](https://apprendre-delphi.fr/apprendre-la-programmation-avec-delphi-2020.php).
+Les rediffusions des 27 sessions de direct sont disponibles sur [la chaîne YouTube de Barnsten France](https://www.youtube.com/c/BarnstenFrance) (rubrique Playlists / Bootcamp Delphi) et sur [Apprendre Delphi](https://apprendre-delphi.fr) (rubrique Formations Delphi / Apprendre la programmation avec Delphi).
 
 -----
 
