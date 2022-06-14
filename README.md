@@ -10,6 +10,8 @@ Vous pouvez aussi utiliser la version d'évaluation ou une version payante des l
 
 Les rediffusions des 27 sessions de direct sont disponibles sur [la chaîne YouTube de Barnsten France](https://www.youtube.com/c/BarnstenFrance) (rubrique Playlists / Bootcamp Delphi) et sur [Apprendre Delphi](https://apprendre-delphi.fr) (rubrique Formations Delphi / Apprendre la programmation avec Delphi).
 
+Un livre sortira prochainement en lien avec cette formation. Une sorte de "guide de la formation" qui reprend les sujets traités. Parfois plus pratique à suivre que les vidéos pour les personnes qui préfèrent lire. Ce livre est [disponible en précommande](https://boutique.olfsoftware.fr/l/ApprendreLaProgrammationAvecDelphi).
+
 -----
 
 Si vous ne connaissez pas Delphi et le langage Pascal, profitez de la version Academic (pour les étudiants, enseignants et établissements d'enseignement) ou Community Edition (gratuite pour une utilisation personnelle) disponibles chez Embarcadero (rubrique "outils gratuits").
