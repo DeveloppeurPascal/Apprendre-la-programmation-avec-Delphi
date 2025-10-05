@@ -3,7 +3,7 @@
 
   Apprendre la programmation avec Delphi
 
-  Copyright 2020-2025 Patrick Prémartin under AGPL 3.0 license.
+  Copyright 2020-2025 Patrick Prémartin under MIT license.
 
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -23,13 +23,13 @@
   Patrick PREMARTIN
 
   Site :
-  https://apprendre-delphi.fr/apprendre-la-programmation-avec-delphi-2020.php
+  https://apprendre-delphi.fr
 
   Project site :
   https://github.com/DeveloppeurPascal/Apprendre-la-programmation-avec-Delphi
 
   ***************************************************************************
-  File last update : 2025-02-09T11:12:31.640+01:00
+  File last update : 2025-10-05T16:42:28.295+02:00
   Signature : 8944dd97337ad6166ee3fae536fe66a5d88bf3fb
   ***************************************************************************
 *)
